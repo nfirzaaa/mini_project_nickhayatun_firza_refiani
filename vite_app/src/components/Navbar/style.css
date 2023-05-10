@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    font-size: 17px;
+}
+
+.navbar .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo p {
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    
+}
+
+.navbar ul .nav-link {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar ul .nav-link a:focus,
+.navbar ul .nav-link a:hover {
+    border-bottom: 3px solid rgb(229 231 235);
+    color: #000;
+}
