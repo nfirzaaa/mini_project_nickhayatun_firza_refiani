@@ -3,7 +3,7 @@ import "./home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import { detailNav } from "../../routes/Link";
 import { product } from "./constant";
-import Carousel from "../../components/Carousel";
+import Carousel from "../../components/Carousel/Carousel";
 import Footer from "../../components/Footer/Footer";
 import { useQuery } from "@apollo/client";
 import { GET_PRODUCT } from "../admin/query";

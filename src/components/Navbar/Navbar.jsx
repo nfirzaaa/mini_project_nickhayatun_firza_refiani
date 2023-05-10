@@ -12,7 +12,7 @@ const Navbar = () => {
             <ul>
                 {navigation.map((d, i) => (
                     <li key={i} className="nav-link">
-                        <a href={d.href}>{d.name}</a>
+                        <a href={d.href} style={{fontSize : 16}}>{d.name}</a>
                     </li>
                 ))}
             </ul>

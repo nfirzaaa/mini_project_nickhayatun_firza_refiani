@@ -32,7 +32,7 @@ const Product = () => {
                         </div>
                         <div className="order">
                             <h2 style={{ textAlign: "center" }}>Buy Now</h2>
-                            <a href="https://wa.me/">
+                            <a href="https://wa.link/xsryr3">
                                 <button className="btn-buy">
                                     <WhatsAppOutlined className="icon" />
                                     Buy

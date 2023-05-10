@@ -18,6 +18,7 @@ const RouteManagement = () => {
         if (location.pathname === "/dashboard") {
             if (token === null) {
                 navigate("/admin");
+                // login
             }
         }
     }, []);
