@@ -1,0 +1,46 @@
+.hero-wrapper {
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.hero-wrapper .image img {
+    width: 12rem;
+}
+.hero-wrapper .image h3 {
+    text-align: center;
+}
+.hero-wrapper .desc-about {
+    width: 40%;
+}
+
+.swot-wrapper {
+    padding: 2rem 5rem;
+}
+
+.swot-wrapper .image {
+    line-height: 0.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.swot-wrapper .image h1 {
+    font-size: 64px;
+}
+
+.swot-wrapper .swot-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 5rem auto;
+    border: 2px solid #000;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.desc p {
+    font-size: 16px;
+}
