@@ -4,10 +4,22 @@ import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import { product } from "../Home/constant";
 import { WhatsAppOutlined } from "@ant-design/icons";
+import { useEffect } from "react";
 
 const Product = () => {
     const params = useParams();
     const detailProduct = product.filter((d) => d.id == params.id);
+
+    const onCheckout = (productName, price) => {
+        let msg = 'Hi admin! Saya ingin memesan sebuah product "' + productName + '"  seharga "' + price + '"';
+        window.open(
+            "https://api.whatsapp.com/send?phone=6285642238452&text=" + msg
+        );
+    }
+
+    useEffect(() => {
+
+    }, []);
 
     return (
         <div>
@@ -31,15 +43,12 @@ const Product = () => {
                             </p>
                         </div>
                         <div className="order">
-                            <h2 style={{ textAlign: "center" }}>Buy Now</h2>
-                            <a href="https://wa.link/xsryr3">
-                                <button className="btn-buy">
-                                    <WhatsAppOutlined className="icon" />
-                                    Buy
-                                </button>
-                            </a>{" "}
+                            <h2 style={{ textAlign: "center" }}>Buy Now</h2>       
+                            <button onClick={() => { onCheckout(detailProduct[0].name, detailProduct[0].price) }} className="btn-buy">
+                                <WhatsAppOutlined className="icon" />
+                                Buy
+                            </button>
                             <br />
-                            <button className="btn-fav">Favorite</button>
                         </div>
                     </div>
                 </div>

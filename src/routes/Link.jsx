@@ -9,7 +9,7 @@ const navLink = [
     },
     {
         name: "Contact Us",
-        to: "/",
+        to: "",
     },
 ];
 

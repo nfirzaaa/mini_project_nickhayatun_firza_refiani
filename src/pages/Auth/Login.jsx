@@ -77,20 +77,20 @@ const Login = () => {
                         />
                     </Form.Item>
                     <Form.Item>
-                        <Form.Item
+                        {/* <Form.Item
                             name="remember"
                             valuePropName="checked"
                             noStyle
                         >
                             <Checkbox>Remember me</Checkbox>
-                        </Form.Item>
+                        </Form.Item> */}
 
                         <Link
                             to="/register"
                             className="login-form-forgot"
                             href=""
                         >
-                            Forgot?
+                            Register Here
                         </Link>
                     </Form.Item>
 
